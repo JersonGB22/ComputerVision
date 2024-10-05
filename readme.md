@@ -20,7 +20,7 @@ The following are the Computer Vision models I have implemented to date:
 
 1. **[Image Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to an image. Inputs are pixel values that compose an image, either in grayscale or RGB. Key use cases include medical image classification, social media photo categorization, and inventory product detection.
 
-2. **[Object Detection](https://github.com/JersonGB22/ImageClassification-TensorFlow):** These models identify and locate instances of objects such as cars, humans, buildings, animals, etc., in an image or video sequence. They return bounding box coordinates along with class labels. Current use cases include security surveillance, autonomous driving, and augmented reality.
+2. **[Object Detection](https://github.com/JersonGB22/ObjectDetection-TensorFlow-PyTorch):** These models identify and locate instances of objects such as cars, humans, buildings, animals, etc., in an image or video sequence. They return bounding box coordinates along with class labels. Current use cases include security surveillance, autonomous driving, and augmented reality.
 
 3. **[Image Segmentation](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task classifies each pixel of an image into a specific category or instance, producing clearly defined areas for each class or object. It is divided into three main types:
    - **Semantic Segmentation:** Assigns a class label to each pixel without distinguishing between different instances of the same class.
