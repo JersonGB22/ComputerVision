@@ -18,15 +18,17 @@ Computer Vision is a field of artificial intelligence that enables machines to i
 
 The following are the Computer Vision models I have implemented to date:
 
-1. **[Image Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to an image. Inputs are pixel values that compose an image, either in grayscale or RGB. Key use cases include medical image classification, social media photo categorization, and inventory product detection.
+1. **[Image Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to a whole image. The input consists of pixel values that make up an image, whether in grayscale or RGB, and the goal is to predict the class to which the image belongs. Key use cases include medical image classification, categorizing photos on social media, and detecting products in inventories.
 
-2. **[Object Detection](https://github.com/JersonGB22/ObjectDetection-TensorFlow-PyTorch):** These models identify and locate instances of objects such as cars, humans, buildings, animals, etc., in an image or video sequence. They return bounding box coordinates along with class labels. Current use cases include security surveillance, autonomous driving, and augmented reality.
+2. **[Object Detection](https://github.com/JersonGB22/ObjectDetection-TensorFlow-PyTorch):** Object detection models identify and locate instances of objects, such as cars, people, buildings, animals, etc., in images or videos. They return bounding box coordinates along with class labels and confidence scores for each detected object. Current use cases include security surveillance, autonomous driving, and augmented reality.
 
-3. **[Image Segmentation](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task classifies each pixel of an image into a specific category or instance, producing clearly defined areas for each class or object. It is divided into three main types:
-   - **Semantic Segmentation:** Assigns a class label to each pixel without distinguishing between different instances of the same class.
-   - **Instance Segmentation:** Labels each pixel and differentiates between individual instances.
-   - **Panoptic Segmentation:** Combines both techniques for detailed segmentation.
-   Use cases include medicine (tissue segmentation), agriculture (crop detection), and robotics.
+3. **[Image Segmentation](https://github.com/JersonGB22/ImageSegmentation-TensorFlow-PyTorch):** Image segmentation classifies each pixel in an image into a specific category or instance of a category. This task is divided into three types:
+
+   - **Semantic Segmentation:** Assigns a class label to each pixel, without distinguishing between different instances of the same class.
+   - **Instance Segmentation:** Labels each pixel and differentiates between individual instances of the same class, producing masks that outline each object with class labels and confidence scores.
+   - **Panoptic Segmentation:** A combination of semantic and instance segmentation, where all pixels in the image are classified, providing detailed segmentation of complex scenes.
+   
+   Important use cases of image segmentation include segmenting organs in medical images, identifying specific areas in satellite images, and object segmentation for robotics and autonomous vehicles.
 
 4. **[Video Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to a video. Models process video frames and generate the probability of each class being represented. Important use cases are activity detection in security, multimedia content classification, and sports analysis.
 
