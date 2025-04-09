@@ -4,35 +4,67 @@
 <img src="ComputerVision.png"> 
 </p>
 
-This repository contains a collection of links to my repositories showcasing implementations of Computer Vision models in Python. It features several basic models using [Convolutional Neural Networks (CNNs)](https://developers.google.com/machine-learning/glossary/#convolutional_neural_network). CNNs are a type of neural network designed to process grid-structured data like images and are particularly effective at recognizing visual patterns by capturing local features through convolutions.
+Computer Vision is a dynamic branch of artificial intelligence that empowers machines to interpret and analyze images and videos. It employs sophisticated algorithms and deep learning models to execute a variety of tasks including object recognition, action detection, image segmentation, and even scene reconstruction and pose estimation enabling systems to identify patterns and anomalies accurately. Today, computer vision is foundational in diverse applications ranging from autonomous vehicles and medical diagnostics to surveillance, augmented reality, and robotics, continuously evolving to transform how we interact with and understand the visual world.
 
-Additionally, it includes models applying [Transfer Learning](https://www.tensorflow.org/tutorials/images/transfer_learning), a technique that reuses pre-trained models on large datasets, allowing for high performance with lower computational costs. This technique leverages the knowledge acquired by models trained on millions of images or videos for specific new tasks, enhancing efficiency and accuracy.
+## **Implemented Computer Vision Tasks**
 
-Furthermore, several notebooks are implemented where [Vision Transformer (ViT)](https://huggingface.co/docs/transformers/model_doc/vit) models are fine-tuned. ViTs use attention mechanisms to process images as a whole, outperforming state-of-the-art convolutional networks and requiring fewer computational resources for training. These models excel at capturing long-range dependencies in input data, resulting in a better understanding of the global structures in images.
+This repository contains a collection of links to my projects that demonstrate implementations of Computer Vision models in Python. It includes several basic models built from scratch using [Convolutional Neural Networks (CNNs)](https://developers.google.com/machine-learning/glossary/#convolutional_neural_network). CNNs are a type of neural network designed to process data with a grid-like structure, such as images, and are particularly effective at recognizing visual patterns by capturing local features through convolution operations.
 
-## **What is Computer Vision?**
+The repository also includes models that use [Transfer Learning](https://www.tensorflow.org/tutorials/images/transfer_learning), a technique that reuses high-performance models such as [Vision Transformers (ViT)](https://huggingface.co/docs/transformers/model_doc/vit) and [YOLO11](https://docs.ultralytics.com/es/models/yolo11/) pretrained on large datasets. This allows achieving high performance with lower computational costs. Transfer Learning takes advantage of the knowledge acquired by models trained on millions of images or videos and applies it to new, specific tasks, improving both efficiency and accuracy.
 
-Computer Vision is a field of artificial intelligence that enables machines to interpret and understand the visual world through images and videos. It employs algorithms and deep learning models to perform tasks such as object recognition, action detection, and image segmentation. Today, it is a crucial technology in various applications, from autonomous vehicles to medical diagnostics and surveillance systems.
+The following are the Computer Vision tasks I have implemented so far:
 
-## **Implemented Models**
+1. **[Image Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to a whole image. The input consists of pixel values that make up an image, whether in grayscale or RGB, and the goal is to predict the class to which the image belongs.
 
-The following are the Computer Vision models I have implemented to date:
+<div align="center">
+  <img src="results/ImageClassification_ConvNeXTV2_CUB-200-2011_eBird.png?raw=true" style="width: 920px;">
+  <br>
+  <em><small>Fine-Grained Image Classification on the CUB-200-2011 Dataset using ConvNeXt V2</small></em>
+</div>
 
-1. **[Image Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to a whole image. The input consists of pixel values that make up an image, whether in grayscale or RGB, and the goal is to predict the class to which the image belongs. Key use cases include medical image classification, categorizing photos on social media, and detecting products in inventories.
+---
 
-2. **[Object Detection](https://github.com/JersonGB22/ObjectDetection-TensorFlow-PyTorch):** Object detection models identify and locate instances of objects, such as cars, people, buildings, animals, etc., in images or videos. They return bounding box coordinates along with class labels and confidence scores for each detected object. Current use cases include security surveillance, autonomous driving, and augmented reality.
+2. **[Object Detection](https://github.com/JersonGB22/ObjectDetection-TensorFlow-PyTorch):** Object detection models identify and locate instances of objects, such as cars, people, buildings, animals, etc., in images or videos. They return bounding box coordinates along with class labels and confidence scores for each detected object.
 
-3. **[Image Segmentation](https://github.com/JersonGB22/ImageSegmentation-TensorFlow-PyTorch):** Image segmentation classifies each pixel in an image into a specific category or instance of a category. This task is divided into three types:
+<div align="center">
+  <img src="results/OBB_ObjectDetection_YOLO11l_DIOR-R_1.gif?raw=true" style="width: 640px;">
+  <br>
+  <em><small>Oriented Object Detection on the DIOR-R Dataset using YOLO11-obb</small></em>
+</div>
 
-   - **Semantic Segmentation:** Assigns a class label to each pixel, without distinguishing between different instances of the same class.
-   - **Instance Segmentation:** Labels each pixel and differentiates between individual instances of the same class, producing masks that outline each object with class labels and confidence scores.
-   - **Panoptic Segmentation:** A combination of semantic and instance segmentation, where all pixels in the image are classified, providing detailed segmentation of complex scenes.
+---
+
+3. **[Image Segmentation](https://github.com/JersonGB22/ImageSegmentation-TensorFlow-PyTorch):** Image segmentation classifies each pixel in an image into a category or a specific instance of a category. This task is divided into three types:
+
+   - **Semantic Segmentation:** Assigns a class label to each pixel in an image without distinguishing between different instances of the same class.
+
+   <div align="center">
+     <img src="results/SemanticSegmentation_SegFormer-B3_LandCover.ai_2.png?raw=true" style="width: 1050px;">
+     <br>
+     <em><small>Semantic Segmentation on the LandCover.ai Dataset using SegFormer</small></em>
+   </div>
+
+   ---
    
-   Important use cases of image segmentation include segmenting organs in medical images, identifying specific areas in satellite images, and object segmentation for robotics and autonomous vehicles.
+   - **Instance Segmentation:** Goes beyond Object Detection by labeling each pixel that belongs to a detected object with a specific class and instance. In this way, the models not only provide the coordinates of the bounding box, along with class labels and confidence scores, but also generate binary masks for each detected instance in an image.
 
-4. **[Video Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to a video. Models process video frames and generate the probability of each class being represented. Important use cases are activity detection in security, multimedia content classification, and sports analysis.
+   <div align="center">
+     <img src="results/InstanceSegmentation_YOLO11m_BDD100K.gif?raw=true" style="width: 600px;">
+     <br>
+     <em><small>Instance Segmentation on the BDD100K Dataset using YOLO11-seg</small></em>
+   </div>
 
-5. **[Image Captioning](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This multimodal task combines Computer Vision and Natural Language Processing (NLP) to generate textual descriptions of images. These models are useful for describing images on social media platforms, improving accessibility for visually impaired individuals, and indexing images for search engines.
+   ---
+
+   - **Panoptic Segmentation:** Combines semantic segmentation and instance segmentation by assigning each pixel in an image both a class and an instance label. This allows for a detailed segmentation of complex scenes.
+
+   <div align="center">
+     <img src="results/PanopticSegmentation_Mask2Former-Tiny_LaRS.gif?raw=true" style="width: 800px;">
+     <br>
+     <em><small>Panoptic Segmentation on the LaRS Dataset using Mask2Former</small></em>
+   </div>
+
+   ---
 
 ## **Contributions**
 
