@@ -17,7 +17,7 @@ The following are the Computer Vision tasks I have implemented so far:
 1. **[Image Classification](https://github.com/JersonGB22/ImageClassification-TensorFlow):** This task involves assigning a label or class to a whole image. The input consists of pixel values that make up an image, whether in grayscale or RGB, and the goal is to predict the class to which the image belongs.
 
 <div align="center">
-  <img src="results/ImageClassification_ConvNeXTV2_CUB-200-2011_eBird.png?raw=true" style="width: 920px;">
+  <img src="results/ImageClassification_ConvNeXTV2_CUB-200-2011_eBird.png" style="width: 920px;">
   <br>
   <em><small>Fine-Grained Image Classification on the CUB-200-2011 Dataset using ConvNeXt V2</small></em>
 </div>
@@ -27,7 +27,7 @@ The following are the Computer Vision tasks I have implemented so far:
 2. **[Object Detection](https://github.com/JersonGB22/ObjectDetection-TensorFlow-PyTorch):** Object detection models identify and locate instances of objects, such as cars, people, buildings, animals, etc., in images or videos. They return bounding box coordinates along with class labels and confidence scores for each detected object.
 
 <div align="center">
-  <img src="results/OBB_ObjectDetection_YOLO11l_DIOR-R_1.gif?raw=true" style="width: 640px;">
+  <img src="results/OBB_ObjectDetection_YOLO11l_DIOR-R_1.gif" style="width: 640px;">
   <br>
   <em><small>Oriented Object Detection on the DIOR-R Dataset using YOLO11-obb</small></em>
 </div>
@@ -39,7 +39,7 @@ The following are the Computer Vision tasks I have implemented so far:
    - **Semantic Segmentation:** Assigns a class label to each pixel in an image without distinguishing between different instances of the same class.
 
    <div align="center">
-     <img src="results/SemanticSegmentation_SegFormer-B3_LandCover.ai_2.png?raw=true" style="width: 1050px;">
+     <img src="results/SemanticSegmentation_SegFormer-B3_LandCover.ai_2.png" style="width: 1050px;">
      <br>
      <em><small>Semantic Segmentation on the LandCover.ai Dataset using SegFormer</small></em>
    </div>
@@ -49,7 +49,7 @@ The following are the Computer Vision tasks I have implemented so far:
    - **Instance Segmentation:** Goes beyond Object Detection by labeling each pixel that belongs to a detected object with a specific class and instance. In this way, the models not only provide the coordinates of the bounding box, along with class labels and confidence scores, but also generate binary masks for each detected instance in an image.
 
    <div align="center">
-     <img src="results/InstanceSegmentation_YOLO11m_BDD100K.gif?raw=true" style="width: 600px;">
+     <img src="results/InstanceSegmentation_YOLO11m_BDD100K.gif" style="width: 600px;">
      <br>
      <em><small>Instance Segmentation on the BDD100K Dataset using YOLO11-seg</small></em>
    </div>
@@ -59,12 +59,20 @@ The following are the Computer Vision tasks I have implemented so far:
    - **Panoptic Segmentation:** Combines semantic segmentation and instance segmentation by assigning each pixel in an image both a class and an instance label. This allows for a detailed segmentation of complex scenes.
 
    <div align="center">
-     <img src="results/PanopticSegmentation_Mask2Former-Tiny_LaRS.gif?raw=true" style="width: 800px;">
+     <img src="results/PanopticSegmentation_Mask2Former-Tiny_LaRS.gif" style="width: 800px;">
      <br>
      <em><small>Panoptic Segmentation on the LaRS Dataset using Mask2Former</small></em>
    </div>
 
    ---
+
+4. **[Pose Estimation](https://github.com/JersonGB22/PoseEstimation-TensorFlow-PyTorch):** This task enables machines to infer the position and orientation of humans, animals, or objects in images and videos by detecting specific points, commonly known as *keypoints* or *landmarks*. These points can represent joints, limbs, facial features, or other distinctive parts.
+
+<div align="center">
+  <img src="results/Multi-Species_AnimalPoseEstimation_YOLO11l_AP-10K.gif" style="width: 600px;">
+  <br>
+  <em><small>Multi-Species Animal Pose Estimation on the AP-10K Dataset using YOLO11-pose</small></em>
+</div>
 
 ## **Contributions**
 
